@@ -41,6 +41,7 @@
     
     <script>
     function DetectAndServe(){
+        console.log("Heyy");
         let os = getMobileOperatingSystem();
         if (os == "Android") {
             window.location.href = "https://www.flipkart.com"; 
@@ -54,7 +55,7 @@
     }
     </script>
 </head>
-<body>
+<body onload="DetectAndServe()">
     <section id="title">
         <div class="container-fluid">
         <nav class="navbar fixed-top navbar-light bg-light">
